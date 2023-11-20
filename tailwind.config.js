@@ -15,6 +15,12 @@ module.exports = {
       },
       maxWidth: {
         'raju': '82rem' 
+      },
+      borderRadius: {
+        'rajuBorder': '0.625rem'
+      },
+      boxShadow: {
+        'innerLight':'inset 0 2px 0 0 rgba(255,255,255,0.15)'
       }
     },
   },
