@@ -20,7 +20,10 @@ module.exports = {
         'rajuBorder': '0.625rem'
       },
       boxShadow: {
-        'innerLight':'inset 0 2px 0 0 rgba(255,255,255,0.15)'
+        'innerLight':'inset 0 2px 0 0 rgba(255,255,255,0.15)',
+
+        'innerLightmini':'inset 0 1px 0 0 rgba(255,255,255,0.15)'
+
       }
     },
   },
