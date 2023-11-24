@@ -10,7 +10,7 @@ fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
   for (let repository of response) {
     const {description, name, stargazers_count, topics, homepage, html_url} = repository; 
     let tags = ``;
-    for (tag of topics) {
+    for (let tag of topics) {
         tag += `<li class="bg-gray-400/10 py-1 px-4 rounded font-bold text-sm">${tag}</li>`
     }
     const element = `<article class="rounded-rajuborderXL overflow-clip bg-gradient-to-br from-white/10 to white/5">
