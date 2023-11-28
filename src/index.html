@@ -25,18 +25,22 @@
                     <li> <a href="#skills">Skills</a></li>
                     <li> <a href="#projects">Projects</a></li>
                     <li class="flex gap-2 items-center"> <img src="./images/resume.svg" alt=""><a download="" href="#">Resume</a></li>
-                    <li> <a class="text-black bg-accent px-8 py-3.5 rounded-xl" href="#contact">Contact</a></li>
+                    <li> <a class="text-black bg-accent px-8 py-3.5 rounded-xl hover:bg-accent-500 hover:ring-accent-500 transition-colors duration-500 " href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <section class="mx-auto max-w-raju mb-20 md:mb-60 md:mt-32 md:flex md:justify-between items-center md:gap-12" id="about">
-            <img class="w-full max-w-xs md:max-w-none md:w-[26rem] mb-5 md:order-2" src="./images/blackDude.png" alt="profile photo">
+            <picture class="md:order-2">
+                <source srcset="./images/blackDude.png?as=webp&width=416" type="image/webp">
+                <source srcset="./images/blackDude.png?as=webp&width=416" type="image/avif">
+              <img class="w-full max-w-xs md:max-w-none md:w-[26rem] mb-5" alt="Zdjęcie Wojciecha Majewskiego"/>
+            </picture>
         <div class="max-w-3xl">
             <h1 class="font-bold text-2xl mb-4 md:text-3xl lg:text-5xl lg:leading-snug md:tracking-tight md:leading-snug ">My name is Wojtek and I'm an aspiring <span class="text-accent">Frontend developer</span> and a keen Star Wars fan.</h1>
             <p class="font-medium text-base md:text-2xl text-gray-400 mb-8 md:mb-16">You might be interested in checking the list of my <a href="#skills" class="text-white" >skills</a>. Don't forget to have a glimpse at my <a class="text-white" href="#projects">projects</a>. I'm looking for a new challenges so if you have one - <a class="text-white" href="#contact">contact me</a> 😊</p>
             <div class="flex flex-col md:flex-row items-start gap-4 flex-wrap">
-            <a class="bg-accent hover:bg-accent-500 text-bg ring-accent flex gap-3 rounded-rajuBorder md:rounded-rajuborderXL font-bold text-xl py-2 md:py-3.5 px-4 md:px-6 items-center" href="#contact"><img src="./images/chatBubble.svg" alt="chat bubble icon">Get in touch</a>
-            <a class="bg-bg border-stroke ring-bg  border-2 text-accent flex gap-3 rounded-rajuBorder md:rounded-rajuborderXL font-bold text-xl py-2 md:py-3.5 px-4 md:px-6  items-center " href="#skills"><img src="./images/head.svg" alt="">Get to know me</a>
+            <a class="bg-accent  text-bg ring-accent hover:bg-accent-500 hover:ring-accent-500 transition-colors duration-500  flex gap-3 rounded-rajuBorder md:rounded-rajuborderXL font-bold text-xl py-2 md:py-3.5 px-4 md:px-6 items-center" href="#contact"><img src="./images/chatBubble.svg" alt="chat bubble icon">Get in touch</a>
+            <a class="bg-bg border-stroke ring-bg  border-2 text-accent transition-all duration-500 hover:text-accent-500 hover:border-accent-500 flex gap-3 rounded-rajuBorder md:rounded-rajuborderXL font-bold text-xl py-2 md:py-3.5 px-4 md:px-6  items-center  " href="#skills"><img src="./images/head.svg" alt="">Get to know me</a>
             </div>
         </div>
         </section>
@@ -98,22 +102,46 @@
             <p class="text-2xl md:text-4xl md:max-w-4xl md:leading-snug font-medium mt-4 mb-10 md:mb-20 tracking-tight">Outside of my regular working hours, I delve into an array of activities and passions. Here's  a glimpse into how I spend my after-hours.</p>
                 <div class="grid gap-16 md:gap-8 md:grid-cols-2 lg:gap-4 lg:grid-cols-4">
                 <article>
-                    <img src="./images/music.png" alt="image showing a record">
+                    <picture>
+                        <source media="(min-width:1023px)" srcset="./images/music.png?as=webp&width=375&height=375" type="image/webp">
+                        <source media="(min-width:1023px)" srcset="./images/music.png?as=webp&width=375&height=375" type="image/avif">
+                        <source media="(min-width:1024px)" srcset="./images/music.png?as=webp&width=375" type="image/webp">
+                        <source media="(min-width:1024px)" srcset="./images/music.png?as=webp&width=375" type="image/avif">
+                        <img class="w-full rounded-rajuborderXL" src="./images/music.png" alt="image showing a record">
+                    </picture>
                     <h3 class="font-bold text-2xl tracking-tight mt-6 mb-1">Electronic Music</h3>
                     <p class="text-gray-400 text-base font-normal ">Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
                 </article>
                 <article>
-                    <img src="./images/star wars.png" alt="image showing a record">
+                    <picture>
+                        <source media="(min-width:1023px)" srcset="./images/starwars.png?as=webp&width=375&height=375" type="image/webp">
+                        <source media="(min-width:1023px)" srcset="./images/starwars.png?as=webp&width=375&height=375" type="image/avif">
+                        <source media="(min-width:1024px)" srcset="./images/starwars.png?as=webp&width=375" type="image/webp">
+                        <source media="(min-width:1024px)" srcset="./images/starwars.png?as=webp&width=375" type="image/avif">
+                        <img class="w-full rounded-rajuborderXL" src="./images/starwars.png" alt="image showing Star Wars">
+                    </picture>
                     <h3 class="font-bold text-2xl tracking-tight mt-6 mb-1">Star Wars Universum</h3>
                     <p class="text-gray-400 text-base font-normal">Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
                 </article>
                 <article>
-                    <img src="./images/video games.png" alt="image showing a record">
+                    <picture>
+                        <source media="(min-width:1023px)" srcset="./images/videogames.png?as=webp&width=375&height=375" type="image/webp">
+                        <source media="(min-width:1023px)" srcset="./images/videogames.png?as=webp&width=375&height=375" type="image/avif">
+                        <source media="(min-width:1024px)" srcset="./images/videogames.png?as=webp&width=375" type="image/webp">
+                        <source media="(min-width:1024px)" srcset="./images/videogames.png?as=webp&width=375" type="image/avif">
+                        <img class="w-full rounded-rajuborderXL" src="./images/videogames.png" alt="image showing a pad">
+                    </picture>
                     <h3 class="font-bold text-2xl tracking-tight mt-6 mb-1">Video Games</h3>
                     <p class="text-gray-400 text-base font-normal">Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
                 </article>
                 <article>
-                    <img src="./images/gym.png" alt="image showing a record">
+                    <picture>
+                        <source media="(min-width:1023px)" srcset="./images/gym.png?as=webp&width=375&height=375" type="image/webp">
+                        <source media="(min-width:1023px)" srcset="./images/gym.png?as=webp&width=375&height=375" type="image/avif">
+                        <source media="(min-width:1024px)" srcset="./images/gym.png?as=webp&width=375" type="image/webp">
+                        <source media="(min-width:1024px)" srcset="./images/gym.png?as=webp&width=375" type="image/avif">
+                        <img class="w-full rounded-rajuborderXL" src="./images/gym.png" alt="image showing a barbell">
+                    </picture>
                     <h3 class="font-bold text-2xl tracking-tight mt-6 mb-1">Strength Training</h3>
                     <p class="text-gray-400 text-base font-normal">Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
                 </article>
@@ -122,7 +150,7 @@
         <section class="mx-auto max-w-raju flex flex-col items-center mb-16" id="contact">
             <h2 class="font-bold text-center text-3xl md:text-[40px] tracking-tight mb-4">Let's work together</h2>
             <p class="text-gray-400 font-medium text-lg md:text-2xl text-center mb-10">I'm open for new opportunities.<br/> If you have one for me we should talk!</p>
-            <a class="bg-accent text-black font-bold text-xl leading-9 flex gap-3 flex-wrap justify-center rounded-[20px] text-center py-3.5 px-8" href="mailto:holyordersol84@gmail.com"><img src="./images/mailIcon.svg" alt="a mail icon">holyordersol84@gmail.com</a>
+            <a class="bg-accent transition-colors hover:bg-accent-500 duration-500 text-black font-bold text-xl leading-9 flex gap-3 flex-wrap justify-center rounded-[20px] text-center py-3.5 px-8" href="mailto:holyordersol84@gmail.com"><img src="./images/mailIcon.svg" alt="a mail icon">holyordersol84@gmail.com</a>
             <p class="text-gray-400 font-medium text-2xl mt-10 md:mt-20 mb-6">or find me on</p>
             <ul class="flex gap-4 justify-center flex-wrap">
                 <li>
