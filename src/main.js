@@ -4,6 +4,10 @@ const projectsContainer = document.querySelector('.projects--js')
 import smallStar from './images/star.svg'
 import boxIcon from './images/box.svg'
 import gitHubIcon from './images/githubButton.svg'
+
+
+console.log('Hey wanna talk send me a message:holyordersol84@gmai.com 😎')
+
 fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
 .then(response => response.json())
 .then(response => {
@@ -31,8 +35,8 @@ fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
     </ul>
     </div>
     <div class="flex flex-col flex-wrap md:flex-row items-start gap-4">
-    <a target ="_blank" rel="noreferrer nofollow" class="bg-bg border-stroke border-2 hover:border-accent-500 transition-colors duration-500 text-accent flex gap-3 rounded-xl font-bold text-base md:text-xl py-4 px-5 items-center"  href="${homepage}"><img src="${boxIcon}" class="w-6 h-6" width="24" height="24"  alt="">View demo</a>
-    <a target ="_blank" rel="noreferrer nofollow" class="bg-bg border-stroke border-2 hover:border-accent-500 transition-colors duration-500 text-accent flex gap-3 rounded-xl font-bold text-base md:text-xl py-4 px-5 items-center" href="${html_url}"><img src="${gitHubIcon}" class="w-6 h-6" width="24" height="24" alt="">Source code</a>
+    <a target ="_blank" rel="noreferrer nofollow" class="bg-bg border-gray-800 border-2 hover:border-accent-500 transition-colors duration-500 text-accent flex gap-3 rounded-xl font-bold text-base md:text-xl py-4 px-5 items-center"  href="${homepage}"><img src="${boxIcon}" class="w-6 h-6" width="24" height="24"  alt="">View demo</a>
+    <a target ="_blank" rel="noreferrer nofollow" class="bg-bg border-gray-800 border-2 hover:border-accent-500 transition-colors duration-500 text-accent flex gap-3 rounded-xl font-bold text-base md:text-xl py-4 px-5 items-center" href="${html_url}"><img src="${gitHubIcon}" class="w-6 h-6" width="24" height="24" alt="">Source code</a>
 </div>
 </div>
 </article>`;
