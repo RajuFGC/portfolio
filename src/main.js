@@ -23,7 +23,7 @@ fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
     <div>
     <header class="flex gap-4 items-center mb-4">
     <h3 class="font-bold text-2xl leading-none">${name}</h3>
-    <p class="bg-gray-400/10 py-1 px-4 rounded font-medium leading-none flex items-center gap-0.5 "><img src="${smallStar}" alt="image of a star" class="w-4 h-4">${stargazers_count}</p>
+    <p class="bg-gray-400/10 py-1 px-4 rounded font-medium leading-none flex items-center gap-0.5 "><img src="${smallStar}"  alt="image of a star" class="w-4 h-4">${stargazers_count}</p>
     </header>
     <p class="text-gray-400 font-normal text-xl leading-6 mb-4">${description}</p>
     <ul class="flex gap-2 mb-10 flex-wrap">
@@ -31,8 +31,8 @@ fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
     </ul>
     </div>
     <div class="flex flex-col flex-wrap md:flex-row items-start gap-4">
-    <a target ="_blank" rel="noreferrer nofollow" class="bg-bg border-stroke border-2 hover:border-accent-500 transition-colors duration-500 text-accent flex gap-3 rounded-xl font-bold text-base md:text-xl py-4 px-5 items-center"  href="${homepage}"><img src="${boxIcon}" class="w-6 h-6" alt="">View demo</a>
-    <a target ="_blank" rel="noreferrer nofollow" class="bg-bg border-stroke border-2 hover:border-accent-500 transition-colors duration-500 text-accent flex gap-3 rounded-xl font-bold text-base md:text-xl py-4 px-5 items-center" href="${html_url}"><img src="${gitHubIcon}" class="w-6 h-6" alt="">Source code</a>
+    <a target ="_blank" rel="noreferrer nofollow" class="bg-bg border-stroke border-2 hover:border-accent-500 transition-colors duration-500 text-accent flex gap-3 rounded-xl font-bold text-base md:text-xl py-4 px-5 items-center"  href="${homepage}"><img src="${boxIcon}" class="w-6 h-6" width="24" height="24"  alt="">View demo</a>
+    <a target ="_blank" rel="noreferrer nofollow" class="bg-bg border-stroke border-2 hover:border-accent-500 transition-colors duration-500 text-accent flex gap-3 rounded-xl font-bold text-base md:text-xl py-4 px-5 items-center" href="${html_url}"><img src="${gitHubIcon}" class="w-6 h-6" width="24" height="24" alt="">Source code</a>
 </div>
 </div>
 </article>`;
