@@ -17,8 +17,9 @@
 <meta property="og:description" content="Frontend portfolio of Wojtek Majewski">
 </head>
 <body class="font-dmsans bg-bg text-white">
-    <main class="px-4 md:px-16">
-        <header class="max-w-raju mx-auto py-6 flex justify-between">
+    <main>
+        <header class="py-6  sticky top-0 bg-bg/50 backdrop-blur-lg">
+            <div class="max-w-raju mx-auto flex justify-between px-4 md:px-16">
         <div class="flex gap-4 items-center tracking-wider">
             <img class="w-10 h-10 animate-Slowspin" src="./images/Union.svg" alt="a star icon in top left corner">
             <div>
@@ -35,7 +36,9 @@
                     <li> <a class="text-black bg-accent px-8 py-3.5 rounded-xl hover:bg-accent-500 hover:ring-accent-500 transition-colors duration-500 " href="#contact">Contact</a></li>
                 </ul>
             </nav>
+        </div>
         </header>
+        <div class="px-4 md:px-16">
         <section class="mx-auto max-w-raju mb-20 md:mb-60 md:mt-32 md:flex md:justify-between items-center md:gap-12" id="about">
             <picture class="md:order-2">
                 <source srcset="./images/blackDude.png?as=webp&width=832" type="image/webp">
@@ -171,6 +174,7 @@
                 </li>
             </ul>
         </section>
+    </div>
     </main>
     <script type="module" src="./main.js"></script>
 </body>
