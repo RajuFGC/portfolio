@@ -6,6 +6,8 @@ A beta version of Fianl Project site
 
 - `HTML`
 - `Flex`
+- `Grid`
+- `JS`
 - `CSS`
 - `JavaScript`
  
